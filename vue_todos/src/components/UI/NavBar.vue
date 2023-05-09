@@ -18,7 +18,9 @@ export default defineComponent({
 
 <template>
   <nav id="vue">
-    <img class="logo" src="src/assets/logo.png" alt="Logo for to do manager" />
+    <!-- @TODO : understand why docker can't build 'cos of the import'-->
+    <!-- <img class="logo" src="src/assets/logo.png" alt="Logo for to do manager" /> -->
+    <h2 class="nav-title">Todo Manager</h2>
     <div class="menu-item"><router-link to="/">Home</router-link></div>
     <div class="menu-item"><router-link to="/stats">Stats</router-link></div>
     <div class="menu-button">
@@ -65,7 +67,12 @@ nav .menu-button {
   right: 50px;
 }
 
-nav .logo {
+/* nav .logo {
   height: 65px;
+} */
+
+nav .nav-title {
+  padding-left: 15px;
+  color : black
 }
 </style>

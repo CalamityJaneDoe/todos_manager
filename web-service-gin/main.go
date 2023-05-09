@@ -61,7 +61,7 @@ func main() {
 	router.DELETE("/todo/:id", deleteTodoByID)
 	//@TODO : add a PATCH endpoint
 
-	router.Run("localhost:8080")
+	router.Run("0.0.0.0:8080") // listen on all network interfaces
 }
 
 // ------ 3. Define handlers ------
