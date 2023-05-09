@@ -102,7 +102,7 @@ func postTodo(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, newTodo)
 }
 
-// putTodo locates the Todo whose ID value matches the id
+// putTodoByID locates the Todo whose ID value matches the id
 // parameter sent by the client, then update that todo from JSON received in the request body.
 func putTodoByID(c *gin.Context) {
 	id := c.Param("id")
